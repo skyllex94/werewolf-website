@@ -31,8 +31,8 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/projects" className="flex items-end">
-          Characters
+        <Link to="/villager" className="flex items-end">
+          Villager
         </Link>
       </Typography>
     </ul>
