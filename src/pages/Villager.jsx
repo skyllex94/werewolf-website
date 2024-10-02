@@ -12,11 +12,11 @@ export default function Villager() {
             <div className="flex">
               <div className="mt-12">
                 <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700">
-                  <a href="#">
+                  <p href="#">
                     <h5 class="mb-2 text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
                       Villager
                     </h5>
-                  </a>
+                  </p>
                   <img
                     src={villager}
                     className="border rounded-2xl"
@@ -26,7 +26,7 @@ export default function Villager() {
                     Objective: Figure out who are the Werewolves
                   </p>
 
-                  <a
+                  <p
                     href="#"
                     class="inline-flex items-center m-3 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
@@ -46,7 +46,7 @@ export default function Villager() {
                         d="M1 5h12m0 0L9 1m4 4L9 9"
                       />
                     </svg>
-                  </a>
+                  </p>
                 </div>
 
                 <div className="flex justify-center "></div>
