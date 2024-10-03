@@ -9,6 +9,17 @@ export default function Villager() {
           <div className="m-auto flex flex-col md:flex-row lg:flex-row xl:flex-row justify-center px-6 xl:container md:px-12 lg:px-6">
             <div></div>
 
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front"></div>
+                <div class="flip-card-back">
+                  <h1>John Doe</h1>
+                  <p>Architect & Engineer</p>
+                  <p>We love that guy</p>
+                </div>
+              </div>
+            </div>
+
             <div className="flex">
               <div className="mt-12">
                 <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700">
@@ -50,9 +61,13 @@ export default function Villager() {
                 </div>
 
                 <div className="flex justify-center my-3">
-                  <a
+                  <p
                     href="/"
-                    class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+                    class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 
+                    focus:ring-4 focus:outline-none focus:ring-gray-300
+                     text-white rounded-xl inline-flex items-center 
+                     justify-center px-4 py-2.5 dark:bg-gray-700
+                      dark:hover:bg-gray-600 dark:focus:ring-gray-700"
                   >
                     <svg
                       class="me-3 w-7 h-7"
@@ -76,7 +91,7 @@ export default function Villager() {
                         iOS App Store
                       </div>
                     </div>
-                  </a>
+                  </p>
                 </div>
               </div>
             </div>
