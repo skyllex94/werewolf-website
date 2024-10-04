@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import villager from "../assets/characters/villager.jpeg";
+import werewolf from "../assets/characters/werewolf.jpeg";
 import cardBack from "../assets/cards/werewolf-card-back.png";
 import Footer from "../components/Footer";
 
-export default function Villager() {
+export default function Werewolf() {
   const [isFlipped, setIsFlipped] = useState(true);
 
   const handleFlip = () => {
@@ -27,15 +27,16 @@ export default function Villager() {
                       className="mb-2 text-center text-2xl font-bold tracking-tight
                        text-gray-900 dark:text-white"
                     >
-                      Villager
+                      Werewolf
                     </h5>
                     <img
-                      src={villager}
+                      src={werewolf}
                       className="border rounded-2xl"
                       alt="villager"
                     />
                     <p className="m-3 font-normal text-gray-700 dark:text-gray-400">
-                      Objective: Figure out who are the Werewolves
+                      <b>Objective:</b> Survive and eliminate enough villagers
+                      so that there are more Werewolves than Villagers left.
                     </p>
 
                     <div className="download-app flex justify-center my-1">

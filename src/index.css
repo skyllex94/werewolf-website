@@ -15,3 +15,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.card-container {
+  perspective: 100px;
+  width: 100%;
+  height: 600px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease;
+}
+
+.card-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flipped .card-front {
+  transform: rotateY(-180deg);
+}
+
+.flipped .card-back {
+  transform: rotateY(0deg);
+}

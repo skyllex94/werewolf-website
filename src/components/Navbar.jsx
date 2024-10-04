@@ -31,8 +31,28 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/villager" className="flex items-end">
+        <Link to="/126c3cb75cb3fbac5432732b23eef6bd" className="flex items-end">
           Villager
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/bbb3606b5cab898386e0d9590278068e" className="flex items-end">
+          Werewolf
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/34b81f08e80d23ea2454472421070786" className="flex items-end">
+          Seer
         </Link>
       </Typography>
     </ul>
