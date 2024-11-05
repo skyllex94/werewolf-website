@@ -55,6 +55,126 @@ export default function Example() {
           Seer
         </Link>
       </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/f9f16d97c90d8c6f2cab37bb6d1f1992" className="flex items-end">
+          Doctor
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/6766992ca3827afeb1181bf1c123b230" className="flex items-end">
+          Tanner
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/c59fdcefd9c65f5471cdee9acbeb3c10" className="flex items-end">
+          Cupid
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/97c8f692a928a55577aaf6cd98c56bb5" className="flex items-end">
+          Prince
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/c79f034d0174707f425a0e523b7a76d5" className="flex items-end">
+          Bodyguard
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/d89e6a000cd7cd4f8270a17a95497fe8" className="flex items-end">
+          Cursed Villager
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/e5ea56a64dedf72d7bfffbd4251d52bc" className="flex items-end">
+          Priest
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/5e409e09f43d85c6e61301149e4f803b" className="flex items-end">
+          Hunter
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/50b137850dcf8a520f48ef958e6b4e3c" className="flex items-end">
+          Lycan
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/1e5801f6c2ee2ba36fb7c41edab701e3" className="flex items-end">
+          Witch
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/e96301d78cf51cca1cc8bdc69072c4a0" className="flex items-end">
+          Alpha Werewolf
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to="/ab1f6afa66043c6763eab729c64bf14a" className="flex items-end">
+          Wolf Cub
+        </Link>
+      </Typography>
     </ul>
   );
 
