@@ -2,7 +2,7 @@ import React from "react";
 
 export default function DownloadApp() {
   return (
-    <div className="download-app flex justify-center my-1">
+    <div className="download-app flex justify-center">
       <div
         className="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 
                                 focus:ring-4 focus:outline-none focus:ring-gray-300

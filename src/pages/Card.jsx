@@ -17,14 +17,17 @@ const Card = ({
   };
 
   useEffect(() => {
-    const savedTime = localStorage.getItem(`timeOpened_${roleName}`);
-    if (savedTime) {
-      setTimeOpened(savedTime);
-    } else {
-      const currentTime = new Date().toLocaleTimeString();
-      setTimeOpened(currentTime);
-      localStorage.setItem(`timeOpened_${roleName}`, currentTime);
-    }
+    const currentTime = new Date().toLocaleTimeString();
+    setTimeOpened(currentTime);
+
+    // const savedTime = localStorage.getItem(`timeOpened_${roleName}`);
+    // if (savedTime) {
+    //   setTimeOpened(savedTime);
+    // } else {
+    //   const currentTime = new Date().toLocaleTimeString();
+    //   setTimeOpened(currentTime);
+    //   localStorage.setItem(`timeOpened_${roleName}`, currentTime);
+    // }
   }, [roleName]);
 
   return (
@@ -40,30 +43,36 @@ const Card = ({
                 className="max-w-sm cursor-pointer flex-1 items-center justify-center "
               >
                 <div className="card-front bg-white">
-                  <div className="border rounded-2xl p-8">
+                  <div className="border rounded-2xl pb-8 px-8">
+                    <p className="text-center text-xl m-4 text-gray-700">
+                      <b>{roleName}</b>
+                    </p>
                     <img
                       src={frontImage}
                       className="border rounded-2xl"
                       alt="role"
                     />
-                  </div>
 
-                  <p className="m-3 font-normal text-gray-700 dark:text-gray-400">
-                    <b>Role & Ability:</b> {objectiveText}
-                  </p>
-                  <p className="m-3 font-normal text-gray-700 dark:text-gray-400">
-                    <b>Time Opened:</b> {timeOpened}
-                  </p>
+                    <p className="mt-3 mx-3 font-normal text-gray-700 dark:text-gray-400">
+                      <b>Role & Ability:</b>
+                    </p>
+                    <p className="mx-3 font-normal text-gray-700 dark:text-gray-400">
+                      {objectiveText}
+                    </p>
+                    <p className="m-3 font-normal text-gray-700 dark:text-gray-400">
+                      <b>Time Opened:</b> {timeOpened}
+                    </p>
 
-                  <div className="download-app flex justify-center my-1">
-                    <a
-                      href={appStoreLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-[80%] sm:w-auto "
-                    >
-                      <DownloadApp />
-                    </a>
+                    <div className="download-app flex justify-center">
+                      <a
+                        href={appStoreLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-[100%] sm:w-auto"
+                      >
+                        <DownloadApp />
+                      </a>
+                    </div>
                   </div>
                 </div>
 
