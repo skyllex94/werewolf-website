@@ -20,7 +20,7 @@ export default function Example() {
 
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-end lg:gap-6">
-      <Typography variant="small" color="blue-gray" className="p-1 font-normal">
+      {/* <Typography variant="small" color="blue-gray" className="p-1 font-normal">
         <Link to="/mission" className="flex items-end">
           Rules
         </Link>
@@ -174,15 +174,15 @@ export default function Example() {
         <Link to="/ab1f6afa66043c6763eab729c64bf14a" className="flex items-end">
           Wolf Cub
         </Link>
-      </Typography>
+      </Typography>  */}
     </ul>
   );
 
   return (
-    <Navbar className="mx-auto py-2 mt-5 pt-4 lg:px-8 lg:py-4">
+    <Navbar className="bg-gray-800 mx-auto py-2 pt-4 lg:px-8 lg:py-4">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Link to={"/"}>
-          <Typography className="mr-4 cursor-pointer py-1.5 font-medium ">
+          <Typography className="text-white mr-4 cursor-pointer py-1.5 font-medium ">
             Werewolf: Save the Village
           </Typography>
         </Link>

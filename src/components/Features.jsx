@@ -4,87 +4,79 @@ import { MdSpeed } from "react-icons/md";
 import { TbFreeRights } from "react-icons/tb";
 import { CiMobile3 } from "react-icons/ci";
 import { MdOutlineLockOpen } from "react-icons/md";
+import { FaRegUser } from "react-icons/fa";
+import { FaAssistiveListeningSystems } from "react-icons/fa";
+import { MdRule } from "react-icons/md";
+import { FaGamepad } from "react-icons/fa";
+import { SiVorondesign } from "react-icons/si";
+import { MdDesignServices } from "react-icons/md";
 
 export default function Features() {
   return (
-    <div className="bg-slate-300 px-3 md:lg:xl:px-64 border-t border-b py-40 bg-opacity-10">
-      <div className="grid grid-cols-1 md:lg:xl:grid-cols-3 group bg-white shadow-xl shadow-neutral-100 border ">
-        <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50 ">
+    <div className="bg-gray-800 px-3 md:lg:xl:px-64 border-t border-b py-40 bg-opacity-10 rounded-2xl">
+      <div className="bg-gray-800 grid grid-cols-1 md:lg:xl:grid-cols-3 group shadow-xl rounded-2xl shadow-neutral-100 border ">
+        <div className="bg-gray-800 p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50 ">
           <span className="p-5 rounded-full bg-gray-500 text-white shadow-lg shadow-red-200">
-            <CiMobile3 size={40} />
+            <FaRegUser size={40} />
           </span>
-          <p className="text-xl font-medium text-slate-700 mt-3">
-            Mobile Development
+          <p className="text-white text-xl font-medium text-slate-700 mt-3">
+            Effortless Role Assignment
           </p>
-          <p className="mt-2 text-sm text-slate-500">
-            We exclusively focus on developing end-to-end software services for
-            mobile users.
+          <p className="text-gray-400 mt-2 text-sm">
+            Players scan a QR code to instantly receive their roles online—no
+            manual setup required.
           </p>
         </div>
 
         <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50 ">
           <span className="p-5 rounded-full bg-gray-500 text-white shadow-lg shadow-orange-200">
-            <TbFreeRights size={40} />
+            <FaAssistiveListeningSystems size={40} />
           </span>
-          <p className="text-xl font-medium text-slate-700 mt-3">Free to Try</p>
-          <p className="mt-2 text-sm text-slate-500">
-            Whether you are sure about our services or not, you can always try
-            us out with full-speed services and see how you like us free of
-            charge for the first 3 days.
+          <p className="text-white text-xl font-medium text-slate-700 mt-3">
+            Narrator Assistance
+          </p>
+          <p className="text-gray-400 mt-2 text-sm">
+            Built-in voice guidance and timers streamline gameplay and keep the
+            game flowing.
           </p>
         </div>
 
         <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-b hover:bg-slate-50 ">
           <span className="p-5 rounded-full bg-gray-500 text-white shadow-lg shadow-yellow-200">
-            <MdSpeed size={40} />
+            <MdRule size={40} />
           </span>
-          <p className="text-xl font-medium text-slate-700 mt-3">
-            Quick iterations in development
+          <p className="text-white text-xl font-medium text-slate-700 mt-3">
+            Inclusive Instructions
           </p>
-          <p className="mt-2 text-sm text-slate-500">
-            We try to build quickly and ship our initial 'MVP' or minimum viable
-            product, and build up from there with the help of customers'
-            feedback.
+          <p className="text-gray-400 mt-2 text-sm">
+            Step-by-step guidance for both new and experienced players, making
+            it easy for anyone to join in.
           </p>
         </div>
 
         <div className="p-10 flex flex-col items-center text-center group md:lg:xl:border-r hover:bg-slate-50 ">
           <span className="p-5 rounded-full bg-gray-500 text-white shadow-lg shadow-green-200">
-            <MdOutlineLockOpen size={40} />
+            <FaGamepad size={40} />
           </span>
-          <p className="text-xl font-medium text-slate-700 mt-3">
-            Safe and Secure data
+          <p className="text-white text-xl font-medium text-slate-700 mt-3">
+            Dynamic Role Interactions
           </p>
-          <p className="mt-2 text-sm text-slate-500">
-            We use strong industry standard encryption to ensure that your
-            traffic cannot be intercepted at the access point or ISP level.
+          <p className="text-gray-400 mt-2 text-sm">
+            Handles complex role interactions and edge cases automatically,
+            ensuring smooth gameplay.
           </p>
         </div>
 
         <div className="p-10 flex flex-col items-center text-center group    md:lg:xl:border-r hover:bg-slate-50 ">
-          <span className="p-5 rounded-full bg-gray-500 text-white shadow-lg shadow-indigo-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="1.5"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-              />
-            </svg>
+          <span className="p-5 rounded-full bg-gray-500 text-white shadow-lg shadow-green-200">
+            <MdDesignServices size={40} />
           </span>
-          <p className="text-xl font-medium text-slate-700 mt-3">
-            Quality over Quantity
+          <p className="text-white text-xl font-medium text-slate-700 mt-3">
+            Immersive Design
           </p>
-          <p className="mt-2 text-sm text-slate-500">
-            After choosing an idea for developement, we go in and start creating
-            the software and improve it until we don't see any more major
-            changes we can create to drastically improve the app.
+          <p className="text-gray-400 mt-2 text-sm">
+            Stunning visuals and user-friendly interface bring the game to life
+            for players of all ages.
           </p>
         </div>
 
@@ -105,11 +97,13 @@ export default function Features() {
               />
             </svg>
           </span>
-          <p className="text-xl font-medium text-slate-700 mt-3">No Logs</p>
-          <p className="mt-2 text-sm text-slate-500">
-            We don't keep any logs about you as a user, or any of your
-            activities online. You can rest assured your privacy is staying
-            intact at all times.
+          <p className="text-white text-xl font-medium text-slate-700 mt-3">
+            Flexible Game Modes
+          </p>
+          <p className="text-gray-400 mt-2 text-sm">
+            Customize settings to match your group's size and preferred level of
+            complexity.can rest assured your privacy is staying intact at all
+            times.
           </p>
         </div>
       </div>

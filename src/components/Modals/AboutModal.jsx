@@ -48,16 +48,6 @@ export default function AboutModal({ setShowModal }) {
                 </label>
               </div>
 
-              <div className="mb-4 flex items-center">
-                <label
-                  className="text-md mb-2 mr-3 block text-gray-700"
-                  htmlFor="event_duration"
-                >
-                  <b>Team:</b> The team consists of a CEO and 2 software
-                  developers, and a marketing agent for driving traffic.
-                </label>
-              </div>
-
               <label
                 className="text-md mb-2 block text-gray-700"
                 htmlFor="Notes"
