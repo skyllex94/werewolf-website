@@ -38,7 +38,7 @@ function Main() {
                       Get Started for Free with our Game App.
                     </span>
                     <a
-                      href="https://apps.apple.com/us/app/vpn-secure-proxy-shield/id1459783875"
+                      href="https://apps.apple.com/us/app/id6738326023"
                       target="_blank"
                       rel="noreferrer"
                       className="flex space-x-4 mt-4"

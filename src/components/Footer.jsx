@@ -25,7 +25,7 @@ export default function Footer() {
                   alt="ios"
                 />
                 <a
-                  href="https://apps.apple.com/us/app/vpn-secure-proxy-shield/id1459783875"
+                  href="https://apps.apple.com/us/app/id6738326023"
                   target="_blank"
                   rel="noreferrer"
                   className="text-left ml-3"
@@ -50,11 +50,19 @@ export default function Footer() {
               >
                 Contact us
               </button>
+
               <button
-                onClick={() => setShowPolicyModal(true)}
+                onClick={() => setShowAboutModal(true)}
                 className="px-2 border-l"
               >
-                Privacy Policy
+                <a
+                  href="https://sites.google.com/view/werewolf-save-the-village/privacy-policy"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex space-x-4"
+                >
+                  <h3 className="">Private Policy</h3>
+                </a>
               </button>
             </div>
           </div>

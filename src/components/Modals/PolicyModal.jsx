@@ -22,7 +22,14 @@ export default function PolicyModal({ setShowModal }) {
         <div ref={closeModalRef} className="relative w-auto max-w-xl">
           <div className="relative flex w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
             <div className="flex items-start justify-between rounded-t border-b border-solid border-slate-200 p-5">
-              <h3 className="text-3xl font-semibold">Private Policy</h3>
+              <a
+                href="https://apps.apple.com/us/app/id6738326023"
+                target="_blank"
+                rel="noreferrer"
+                className="flex space-x-4 mt-4"
+              >
+                <h3 className="text-3xl font-semibold">Private Policy</h3>
+              </a>
             </div>
 
             <form className="p-8">
@@ -30,14 +37,7 @@ export default function PolicyModal({ setShowModal }) {
                 <label
                   className="text-md mb-2 mr-3 block text-gray-700"
                   htmlFor="category_name"
-                >
-                  Zion Studion LLC, we respects the privacy of our users. This
-                  Privacy Policy explains how we collect, use, disclose, and
-                  safeguard your information when you visit our mobile
-                  communication application. Please read this Privacy Policy
-                  carefully. IF YOU DO NOT AGREE WITH THE TERMS OF THIS PRIVACY
-                  POLICY, PLEASE DO NOT ACCESS THE APPLICATION.
-                </label>
+                ></label>
               </div>
 
               <div className="mb-4 flex items-center">

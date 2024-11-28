@@ -188,7 +188,7 @@ export default function Example() {
         </Link>
         <div className="flex items-end">
           <div className="hidden lg:block">{navList}</div>
-          <Link to="/apps">
+          <Link to="https://apps.apple.com/us/app/id6738326023">
             <Button
               variant="gradient"
               size="sm"
@@ -241,7 +241,7 @@ export default function Example() {
         <div className="container mx-auto">
           {navList}
 
-          <Link to="/apps">
+          <Link to="https://apps.apple.com/us/app/id6738326023">
             <Button variant="gradient" size="sm" fullWidth className="mb-2">
               <span>Download App</span>
             </Button>
