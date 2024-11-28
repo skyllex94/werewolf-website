@@ -1,14 +1,10 @@
 import React from "react";
 
-import { MdSpeed } from "react-icons/md";
-import { TbFreeRights } from "react-icons/tb";
-import { CiMobile3 } from "react-icons/ci";
-import { MdOutlineLockOpen } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
 import { FaAssistiveListeningSystems } from "react-icons/fa";
 import { MdRule } from "react-icons/md";
 import { FaGamepad } from "react-icons/fa";
-import { SiVorondesign } from "react-icons/si";
+
 import { MdDesignServices } from "react-icons/md";
 
 export default function Features() {
