@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <React.Fragment>
-      <div className=" bg-gray-900 text-white">
+      <div className="bg-gray-900 text-white">
         <div className="max-w-2xl mx-auto py-10">
           <div className="text-center">
             <h3 className="text-xl mb-3 text-white">
