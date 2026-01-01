@@ -3,71 +3,66 @@ import appStore from "../assets/app-store.png";
 import mainImage from "../assets/slide4.jpg";
 import Footer from "../components/Footer";
 import Features from "../components/Features";
-import Navbar from "../components/Navbar";
 
 function Main() {
   return (
-    <div className="bg-gray-900">
-      <Navbar />
-      <div>
-        <div className="py-10 lg:pt-20">
-          <div className="m-auto flex flex-col md:flex-row lg:flex-row xl:flex-row justify-center px-6 xl:container md:px-12 lg:px-6">
-            <div>
-              <h2 className="text-white mt-10 xl:container text-start font-black text-2xl text-black-900 sm:mx-auto md:text-4xl lg:w-auto lg:text-left xl:text-5xl">
-                Werewolf: Save the Village
-                <br className="block" />
-              </h2>
-              <h2 className="text-white xl:container text-start text-2xl text-black-500 sm:mx-auto md:text-2xl lg:w-auto lg:text-left xl:text-4xl mt-5">
-                Unleash the role-playing game to the next level
-              </h2>
-              <div className="relative mt-8 space-y-8 text-start">
-                <p className="text-gray-400 dark:text-gray-300 sm:text-lg">
+    <div className="bg-gray-900 min-h-screen">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
+        <div className="relative z-10 py-20 lg:py-32">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+              {/* Content */}
+              <div className="text-center lg:text-left">
+                <h1 className="text-4xl lg:text-6xl xl:text-7xl font-black text-white mb-6 leading-tight">
+                  Werewolf:
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">
+                    Save the Village
+                  </span>
+                </h1>
+                <h2 className="text-xl lg:text-2xl text-gray-300 mb-8 font-light leading-relaxed">
+                  Unleash the role-playing game to the next level
+                </h2>
+                <p className="text-lg text-gray-400 mb-10 max-w-2xl leading-relaxed">
                   Gather your friends, uncover hidden identities, and decide who
                   to trust in this immersive game of mystery and strategy. Can
                   you save the village, or will the Werewolves prevail?
                 </p>
 
-                <div className="grid md:flex lg:justify-start">
-                  <div className="flex justify-center">
-                    <span className="font-medium dark:text-white md:block" />
-                  </div>
-
-                  <div className="text-white font-semibold dark:text-gray-300">
-                    🌟
-                    <span className="pl-2 ">
-                      Get Started for Free with our Game App.
-                    </span>
-                    <a
-                      href="https://apps.apple.com/us/app/id6738326023"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex space-x-4 mt-4"
-                    >
-                      <img
-                        src={appStore}
-                        alt="front-gif"
-                        className="font-medium dark:text-white md:block h-20"
-                      />
-                    </a>
-                  </div>
+                {/* CTA Section */}
+                <div className="flex justify-center lg:justify-start">
+                  <a
+                    href="https://apps.apple.com/us/app/id6738326023"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="transition-transform duration-300 hover:scale-105"
+                  >
+                    <img
+                      src={appStore}
+                      alt="Download on App Store"
+                      className="h-12 w-auto drop-shadow-lg"
+                    />
+                  </a>
                 </div>
               </div>
-            </div>
 
-            <div className="flex">
-              <div className="mt-12">
-                <div className="flex justify-center">
+              {/* Image */}
+              <div className="flex justify-center lg:justify-end">
+                <div className="relative">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-orange-400 to-red-500 rounded-3xl blur-lg opacity-20"></div>
                   <img
                     src={mainImage}
-                    className="landing-image rounded-2xl"
-                    alt="vpn display"
+                    className="relative rounded-2xl shadow-2xl w-full max-w-lg lg:max-w-xl"
+                    alt="Werewolf game interface"
                   />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
       <Features />
       <Footer />
     </div>

@@ -10,64 +10,70 @@ export default function Footer() {
 
   return (
     <React.Fragment>
-      <div className="bg-gray-900 text-white">
-        <div className="max-w-2xl mx-auto py-10">
-          <div className="text-center">
-            <h3 className="text-xl mb-3 text-white">
-              Download Werewolf: Save the Village
+      <footer className="bg-gray-900 border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+          {/* Main CTA Section */}
+          <div className="text-center mb-16">
+            <h3 className="text-3xl font-bold text-white mb-4">
+              Ready to Play?
             </h3>
-            <p> Stay entertained. All day, every day.</p>
-            <div className="flex justify-center my-10">
-              <div className="flex items-center border w-auto rounded-lg px-4 py-2  mx-2">
+            <p className="text-gray-400 text-lg mb-8 max-w-md mx-auto">
+              Download Werewolf: Save the Village and start your adventure
+              today.
+            </p>
+            <div className="flex justify-center">
+              <a
+                href="https://apps.apple.com/us/app/id6738326023"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center bg-black border border-gray-700 rounded-xl px-6 py-4 hover:bg-gray-800 hover:border-gray-600 transition-all duration-300 group"
+              >
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/888/888841.png"
-                  className="w-7 md:w-8"
-                  alt="ios"
+                  className="w-8 h-8 mr-4 group-hover:scale-110 transition-transform duration-300"
+                  alt="App Store"
                 />
-                <a
-                  href="https://apps.apple.com/us/app/id6738326023"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-left ml-3"
-                >
-                  <p className="text-xs text-gray-200">Download on </p>
-                  <p className="text-sm md:text-base"> Apple Store </p>
-                </a>
-              </div>
+                <div className="text-left">
+                  <p className="text-xs text-gray-400">Download on the</p>
+                  <p className="text-lg font-semibold text-white">App Store</p>
+                </div>
+              </a>
             </div>
           </div>
-          <div className="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
-            <p className="order-2 md:order-1 mt-8 md:mt-0">
-              &copy; Zion Studios LLC., {new Date().getFullYear()}.
-            </p>
-            <div className="order-1 md:order-2">
-              <button onClick={() => setShowModal(true)} className="px-2">
-                About us
-              </button>
-              <button
-                onClick={() => setShowAboutModal(true)}
-                className="px-2 border-l"
-              >
-                Contact us
-              </button>
 
-              <button
-                onClick={() => setShowAboutModal(true)}
-                className="px-2 border-l"
-              >
+          {/* Bottom Section */}
+          <div className="border-t border-gray-800 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
+              <p className="text-gray-400 text-sm mb-4 md:mb-0">
+                &copy; {new Date().getFullYear()} Zion Studios LLC. All rights
+                reserved.
+              </p>
+              <div className="flex flex-wrap justify-center md:justify-end gap-6">
+                <button
+                  onClick={() => setShowModal(true)}
+                  className="text-gray-400 hover:text-white text-sm transition-colors duration-300 hover:underline"
+                >
+                  About us
+                </button>
+                <button
+                  onClick={() => setShowAboutModal(true)}
+                  className="text-gray-400 hover:text-white text-sm transition-colors duration-300 hover:underline"
+                >
+                  Contact us
+                </button>
                 <a
                   href="https://sites.google.com/view/werewolf-save-the-village/privacy-policy"
                   target="_blank"
                   rel="noreferrer"
-                  className="flex space-x-4"
+                  className="text-gray-400 hover:text-white text-sm transition-colors duration-300 hover:underline"
                 >
-                  <h3 className="">Private Policy</h3>
+                  Privacy Policy
                 </a>
-              </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
       {showModal && <AboutModal setShowModal={setShowModal} />}
       {showAboutModal && <ContactsModal setShowModal={setShowAboutModal} />}
       {showPolicyModal && <PolicyModal setShowModal={setShowPolicyModal} />}
